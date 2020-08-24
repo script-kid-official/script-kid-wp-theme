@@ -1,0 +1,187 @@
+:root {
+    --main-bg-color: rgb(58, 58, 58);
+    --main-text-color: white;
+    --block-bg-color: white;
+    --block-title-bg-color: #2196f3;
+    --navbar-bg-color: #2196f3;
+}
+
+
+main {
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+}
+
+footer {
+    background-color: var(--navbar-bg-color);
+    color: #fafafa;
+}
+
+a {
+    text-decoration: none;
+    color: var(--navbar-bg-color);
+
+}
+
+.navbar {
+    background-color: var(--navbar-bg-color);
+    color: #fafafa;
+}
+
+
+nav ul {
+    margin-bottom: 0rem;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li.menu-item a {
+    padding: .5rem;
+    text-decoration: none;
+    color: var(--main-text-color);
+}
+
+
+
+
+
+.block {
+    background-color: var(--block-bg-color);
+    color: var(--main-bg-color);
+}
+
+/* Post */
+.single-post .single-post-content section.content {
+    display: flex;
+    flex-flow: wrap;
+}
+
+.single-post .single-post-content section.content .block {
+    margin: 2em;
+    flex: auto;
+    max-width: 45%;
+}
+
+.single-post .single-post-content section.content.masonry-grid-2col .block,
+.single-post .single-post-content section.content.masonry-grid .block {
+    background-color: #eee;
+    display: inline-block;
+    margin: 0 0 1em;
+    max-width: 100%;
+    width: 100%;
+}
+
+
+.single-post .single-post-content .block .block-content-title {
+    background-color: var(--block-title-bg-color);
+    color: var(--main-text-color);
+    padding: 10px;
+}
+
+.single-post .single-post-content .block .block-content-title h3 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.single-post .single-post-content .block .block-content-description {
+    padding: 10px;
+}
+
+.single-post .single-post-content .block .block-content-description div {
+    padding: 1em 0;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+/* Masonry Block Content Styling */
+
+.single-post .single-post-content section.content.masonry-grid {
+    column-count: 4;
+    column-gap: 1em;
+    display: inherit;
+    width: 100%;
+}
+
+.single-post .single-post-content section.content.masonry-grid-2col {
+    column-count: 2;
+    column-gap: 1em;
+    display: inherit;
+    width: 100%;
+}
+
+@media screen and (max-width: 1800px) {
+
+    .single-post .single-post-content section.content.masonry-grid {
+        column-count: 3;
+        column-gap: 1em;
+        display: inherit;
+        width: 100%;
+    }
+
+    .single-post .single-post-content section.content.masonry-grid-2col {
+        column-count: 2;
+        column-gap: 1em;
+        display: inherit;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    .single-post .single-post-content section.content.masonry-grid {
+        column-count: 2;
+        column-gap: 1em;
+        display: inherit;
+        width: 100%;
+    }
+
+    .single-post .single-post-content section.content.masonry-grid-2col {
+        column-count: 2;
+        column-gap: 1em;
+        display: inherit;
+        width: 100%;
+    }
+
+    .single-post .single-post-content section.content .block {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .single-post .single-post-content section.content.masonry-grid {
+        column-count: 1;
+        column-gap: 1em;
+        display: inherit;
+        width: 100%;
+    }
+
+    .single-post .single-post-content section.content.masonry-grid-2col {
+        column-count: 1;
+        column-gap: 1em;
+        display: inherit;
+        width: 100%;
+    }
+
+    .single-post .single-post-content section.content .block {
+        max-width: 100%;
+    }
+}
+
+
+.single-post .single-post-content section.content.masonry-grid .block {
+    background-color: #eee;
+    display: inline-block;
+    margin: 0 0 1em;
+    max-width: 100%;
+    width: 100%;
+}
+
+.single-post .single-post-content section.content.masonry-grid-2col>.block {
+    background-color: #eee;
+    display: inline-block;
+    margin: 0 0 1em;
+    max-width: 100%;
+    width: 100%;
+}
+
+/* Masonry Block Content Styling */
