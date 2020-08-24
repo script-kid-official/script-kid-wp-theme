@@ -12,11 +12,19 @@
 
 <header>
 
+
   <!-- Navbar -->
   <?php
   echo get_template_part("components/navbar/navbar")
   ?>
   <!-- !Navbar -->
+
+  
+  <!-- Banner -->
+  <?php
+  echo get_template_part("components/banner/banner")
+  ?>
+  <!-- !Banner -->
 
 </header>
 <main>

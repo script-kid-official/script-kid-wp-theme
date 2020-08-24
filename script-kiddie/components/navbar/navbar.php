@@ -12,4 +12,6 @@
     }
   ?>
   </nav> 
+  <a class="btn btn-dark app-link" href="/app">View App</a>
+  
 </div>
